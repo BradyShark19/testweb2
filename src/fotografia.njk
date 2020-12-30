@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Fotografía
+eleventyNavigation:
+  key: fotografia
+  title: Fotografía
+  order: 3
+---
+
+<div class="col-12">
+
+  <div class="fotografia-hero">
+    {% set elemento = {"imagen": "foto-1.jpg"} %}
+    {% include 'components/project.njk' %}
+  </div>
+
+  <p>
+    La página de fotografía.
+  </p>
+
+  {% for elemento in fotos %}
+    {% include 'components/project.njk' %}
+  {% endfor %}
+
+</div>

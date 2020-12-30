@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Ilustración
+eleventyNavigation:
+  key: ilustracion
+  title: Ilustración
+  order: 2
+---
+
+<div class="col-12">
+  <h1>ilustración</h1>
+  <p>
+    La página de ilustración.
+  </p>
+  {% for elemento in ilus %}
+    {% include 'components/project.njk' %}
+  {% endfor %}
+</div>
